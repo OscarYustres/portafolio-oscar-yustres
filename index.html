@@ -1,11 +1,498 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-</head>
-<body>
+    <title>Oscar Yustres | Arquitecto de Soluciones Moderno</title>
     
+    <!-- Meta tags -->
+    <meta name="description" content="Portafolio de Oscar Yustres - Ingeniero de Sistemas y Desarrollador Full Stack">
+    <meta name="author" content="Oscar Daniel Yustres Castro">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Oscar Yustres | Arquitecto de Soluciones">
+    <meta property="og:description" content="Ingeniero de Sistemas con 4+ años de experiencia en PHP, Django y JavaScript">
+    <meta property="og:type" content="website">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+   
+</head>
+
+<body>
+
+    <!-- ============================================ -->
+    <!-- HEADER (Glassmorphism) -->
+    <!-- ============================================ -->
+    <header class="header" role="banner">
+        <nav class="nav container" aria-label="Navegación principal">
+            <div class="nav__logo">
+                <a href="#inicio" aria-label="Inicio">
+                    <span class="logo__text">&lt;/&gt;</span>
+                    <span class="logo__name">Oscar Yustres</span>
+                </a>
+            </div>
+
+            <button class="nav__toggle" id="mobileToggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <ul class="nav__list" id="navList">
+                <li><a href="#inicio" class="nav__link active">Inicio</a></li>
+                <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+                <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contacto" class="btn btn--primary btn--small">Hablemos</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <section id="inicio" class="hero">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="badge__dot"></span>
+                    Disponible para proyectos
+                </div>
+
+                <h1 class="hero__title">
+                    Hola, soy <span class="highlight">Oscar Yustres</span>
+                    <span class="hero__subtitle">Ingeniero de Sistemas & Desarrollador Full Stack</span>
+                </h1>
+
+                <p class="hero__description">
+                    Construyo <strong>soluciones tecnológicas</strong> que resuelven problemas reales de negocio.
+                    Especializado en <strong>PHP, Django, JavaScript</strong> y arquitecturas robustas.
+                </p>
+
+                <div class="hero__buttons">
+                    <a href="#proyectos" class="btn btn--primary">
+                        Ver proyectos <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contacto" class="btn btn--secondary">
+                        <i class="fas fa-paper-plane"></i> Contactar
+                    </a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__number highlight" data-count="4">5<span class="plus">+</span></span>
+                        <span class="stat__label">Años de experiencia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__number highlight" data-count="4">4</span>
+                        <span class="stat__label">Empresas con mi POS</span>
+                    </div>
+                    <!-- <div class="stat">
+                        <span class="stat__number" data-count="10">0<span class="plus">K+</span></span>
+                        <span class="stat__label">Registros gestionados</span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="hero__image">
+                <div class="hero__avatar-wrapper">
+                    <div class="hero__avatar">
+                        <div class="avatar-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="avatar-text">Oscar Yustres · Ingeniero de Sistemas</div>
+                    </div>
+                    <div class="hero__floating-card card--tech">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="hero__floating-card card--node">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="hero__floating-card card--db">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SOBRE MÍ -->
+    <!-- ============================================ -->
+    <section class="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__content">
+                    <span class="section-tag">Sobre Mí</span>
+                    <h2 class="section-title">
+                        Construyendo sistemas que <br>
+                        <span class="highlight">transforman negocios</span>
+                    </h2>
+                    <p class="about__text">
+                        Soy un <strong>Ingeniero de Sistemas</strong> con más de 4 años de experiencia en el
+                        diseño, desarrollo y mantenimiento de aplicaciones web empresariales. He trabajado
+                        con <strong>PHP, Django, JavaScript, PostgreSQL y MySQL</strong>, participando en
+                        la construcción de sistemas de gestión, control de inventarios y soluciones comerciales.
+                    </p>
+                    <p class="about__text">
+                        Me especializo en el <strong>análisis de requerimientos, optimización de procesos</strong>
+                        y desarrollo de soluciones tecnológicas orientadas al negocio. Mis sistemas están
+                        actualmente en producción, gestionando miles de registros y operando en múltiples empresas.
+                    </p>
+
+                    <div class="about__highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sistemas en producción</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Arquitectura robusta</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Metodologías ágiles</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Enfoque al negocio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience__list">
+                    <div class="experience__card">
+                        <i class="fas fa-briefcase"></i>
+                        <div>
+                            <h4>Programador Junior</h4>
+                            <p>A tiempo SAS · Dic 2021 - Nov 2025</p>
+                            <p style="font-size:0.85rem; margin-top:0.3rem; color:var(--color-text-light);">
+                                Desarrollé módulos con PHP y PostgreSQL. Construí sistema en Django para control de dotación con trazabilidad del 100%.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="experience__card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h4>Ingeniería de Sistemas</h4>
+                            <p>Corporación Unitec · 2011 - 2018</p>
+                        </div>
+                    </div>
+                    <div class="experience__card">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <h4>Proyectos destacados</h4>
+                            <p>Sistema POS web · Polla Mundial · Control de dotación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CASOS DE ESTUDIO (PROYECTOS) -->
+    <!-- ============================================ -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Casos de Estudio</span>
+                <h2 class="section-title">
+                    Proyectos que <span class="highlight">marcan la diferencia</span>
+                </h2>
+                <p class="section-subtitle">
+                    Soluciones desarrolladas desde cero, implementadas en producción con usuarios reales
+                </p>
+            </div>
+
+            <div class="projects__grid">
+                <!-- POS Web -->
+                <article class="project__card">
+                    <div class="project__header">
+                        <div class="icon"><i class="fas fa-store"></i></div>
+                        <span class="project__badge">En producción</span>
+                    </div>
+                    <div class="project__body">
+                        <h3>Sistema POS Web</h3>
+                        <div class="meta">
+                            <strong>Clientes:</strong> Aceros y Aluminios · Medixel · JeffCar · Ice Cream House
+                        </div>
+                        <p>
+                            Suite completa de punto de venta que gestiona ventas, inventarios, clientes y reportes
+                            en tiempo real. Integra FullCalendar, DataTables, Chart.js y TCPDF.
+                        </p>
+                        <div class="project__challenge">
+                            <strong>🎯 El desafío:</strong>
+                            <p>Unificar la gestión de ventas e inventarios para múltiples empresas con necesidades diversas.</p>
+                        </div>
+                        <div class="project__challenge" style="border-left-color: var(--color-success);">
+                            <strong>✅ El resultado:</strong>
+                            <p>Implementado en 4 empresas, gestionando más de 10.000 registros activos.</p>
+                        </div>
+                        <div class="project__tech">
+                            <span>PHP</span><span>JavaScript</span><span>PostgreSQL</span>
+                            <span>FullCalendar</span><span>DataTables</span><span>Chart.js</span>
+                        </div>
+                    </div>
+                    <div class="project__footer">
+                        <a href="https://www.dysoftw.com/" target="_blank" class="btn btn--primary btn--small">
+                            <i class="fas fa-external-link-alt"></i> Ver demo
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Polla Mundial -->
+                <article class="project__card">
+                    <div class="project__header">
+                        <div class="icon"><i class="fas fa-futbol"></i></div>
+                        <span class="project__badge">Usuarios activos</span>
+                    </div>
+                    <div class="project__body">
+                        <h3>Polla Mundial</h3>
+                        <div class="meta">
+                            <strong>Estado:</strong> En producción con usuarios activos
+                        </div>
+                        <p>
+                            Plataforma interactiva para predicciones de fútbol en torneos internacionales.
+                            Los usuarios registran sus predicciones y el sistema calcula la puntuación automáticamente.
+                        </p>
+                        <div class="project__challenge">
+                            <strong>🎯 El desafío:</strong>
+                            <p>Crear un sistema de predicciones con lógica de puntuación automática y tablas de posiciones en tiempo real.</p>
+                        </div>
+                        <div class="project__challenge" style="border-left-color: var(--color-success);">
+                            <strong>✅ El resultado:</strong>
+                            <p>Plataforma funcional con usuarios activos participando durante los torneos.</p>
+                        </div>
+                        <div class="project__tech">
+                            <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+                            <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+                        </div>
+                    </div>
+                    <div class="project__footer">
+                        <a href="https://www.dysoftw.com/mundial" target="_blank" class="btn btn--primary btn--small">
+                            <i class="fas fa-external-link-alt"></i> Ver demo
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- HABILIDADES -->
+    <!-- ============================================ -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Stack Técnico</span>
+                <h2 class="section-title">
+                    Herramientas que <span class="highlight">domino</span>
+                </h2>
+                <p class="section-subtitle">
+                    Tecnologías con las que trabajo diariamente para construir soluciones robustas
+                </p>
+            </div>
+
+            <div class="skills__grid">
+                <!-- Backend -->
+                <div class="skill__category">
+                    <h4><i class="fas fa-server"></i> Backend</h4>
+                    <div class="skill__item">
+                        <span>PHP</span>
+                        <span class="level">Experto</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 95%;"></div></div>
+                    <div class="skill__item">
+                        <span>Django (Python)</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 85%;"></div></div>
+                    <div class="skill__item">
+                        <span>Java</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 80%;"></div></div>
+                    <div class="skill__item">
+                        <span>Node.js</span>
+                        <span class="level">Intermedio</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 65%;"></div></div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill__category">
+                    <h4><i class="fas fa-code"></i> Frontend</h4>
+                    <div class="skill__item">
+                        <span>JavaScript</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 90%;"></div></div>
+                    <div class="skill__item">
+                        <span>React.js</span>
+                        <span class="level">Intermedio</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 70%;"></div></div>
+                    <div class="skill__item">
+                        <span>HTML5 & CSS3</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 95%;"></div></div>
+                    <div class="skill__item">
+                        <span>Bootstrap</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 90%;"></div></div>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="skill__category">
+                    <h4><i class="fas fa-database"></i> Bases de Datos</h4>
+                    <div class="skill__item">
+                        <span>PostgreSQL</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 90%;"></div></div>
+                    <div class="skill__item">
+                        <span>MySQL</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 88%;"></div></div>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="skill__category">
+                    <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                    <div class="skill__item">
+                        <span>Git & GitHub</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 90%;"></div></div>
+                    <div class="skill__item">
+                        <span>APIs REST</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 85%;"></div></div>
+                    <div class="skill__item">
+                        <span>Scrum</span>
+                        <span class="level">Avanzado</span>
+                    </div>
+                    <div class="skill__bar"><div class="fill" style="width: 85%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACTO -->
+    <!-- ============================================ -->
+    <!-- ============================================ -->
+<!-- CONTACTO - VERSIÓN ENLACES DIRECTOS -->
+<!-- ============================================ -->
+<section id="contacto" class="contact">
+    <div class="container">
+        <div class="contact__wrapper" style="text-align: center; padding: 3rem;">
+            <span class="section-tag">Contacto</span>
+            <h2 class="section-title">
+                ¿Hablamos de tu <span class="highlight">próximo proyecto</span>?
+            </h2>
+            <p class="contact__text" style="max-width: 600px; margin: 0 auto 2rem;">
+                Estoy a solo un clic de distancia. Elige el medio que prefieras y hablemos.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 700px; margin: 0 auto;">
+                <!-- Email -->
+                <a href="mailto:oscar_dyc@hotmail.com" 
+                   style="background: var(--color-bg-card); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); text-decoration: none; color: var(--color-text); transition: var(--transition); display: block;">
+                    <i class="fas fa-envelope" style="font-size: 2rem; color: var(--color-secondary); display: block; margin-bottom: 0.5rem;"></i>
+                    <strong>Email</strong>
+                    <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: 0.25rem;">oscar_dyc@hotmail.com</p>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/573195722786?text=Hola%20Oscar%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20hablar%20contigo" 
+                   target="_blank"
+                   style="background: var(--color-bg-card); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); text-decoration: none; color: var(--color-text); transition: var(--transition); display: block;">
+                    <i class="fab fa-whatsapp" style="font-size: 2rem; color: #25D366; display: block; margin-bottom: 0.5rem;"></i>
+                    <strong>WhatsApp</strong>
+                    <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: 0.25rem;">+57 319 5722786</p>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/oscar-daniel-yustres-castro-empleabilidad-web/" 
+                   target="_blank"
+                   style="background: var(--color-bg-card); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); text-decoration: none; color: var(--color-text); transition: var(--transition); display: block;">
+                    <i class="fab fa-linkedin" style="font-size: 2rem; color: #0A66C2; display: block; margin-bottom: 0.5rem;"></i>
+                    <strong>LinkedIn</strong>
+                    <p style="font-size: 0.85rem; color: var(--color-text-light); margin-top: 0.25rem;">Conectar ahora</p>
+                </a>
+            </div>
+
+            <!-- Redes sociales adicionales -->
+            <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://github.com/OscarYustres" target="_blank" 
+                   style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border-radius: var(--radius-full); background: var(--color-bg-card); border: 1px solid var(--color-border); text-decoration: none; color: var(--color-text); transition: var(--transition);">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.dysoftw.com/" target="_blank" 
+                   style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border-radius: var(--radius-full); background: var(--color-bg-card); border: 1px solid var(--color-border); text-decoration: none; color: var(--color-text); transition: var(--transition);">
+                    <i class="fas fa-globe"></i> Portfolio
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <span class="logo__text">&lt;/&gt;</span>
+                    <span>Oscar Yustres</span>
+                    <p>Ingeniero de Sistemas · Bogotá, Colombia</p>
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://github.com/OscarYustres" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/oscar-daniel-yustres-castro-empleabilidad-web/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:oscar_dyc@hotmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2026 Oscar Daniel Yustres Castro. Todos los derechos reservados.</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================================ -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
